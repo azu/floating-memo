@@ -3,4 +3,5 @@
  * LICENSE : MIT
  */
 "use strict";
+
 window.dayOne = require("./save-adapter/day-one");
