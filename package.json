@@ -1,42 +1,44 @@
 {
-    "name": "floating-memo",
-    "description": "floating memo in node-webkit",
-    "version": "0.0.1",
-    "homepage": "https://github.com/azu/floating-memo/",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/azu/floating-memo.git"
-    },
-    "main": "index.html",
-    "node-main": "node-main/index.js",
-    "no-edit-menu": false,
-    "window": {
-        "title": "node-webkit demo",
-        "icon": "link.png",
-        "toolbar": false,
-        "frame": false,
-        "width": 800,
-        "height": 500,
-        "position": "mouse",
-        "min_width": 400,
-        "min_height": 200,
-        "max_width": 800,
-        "max_height": 600
-    },
-    "scripts": {
-        "watch": "watchify lib/app.js -o index.js -d -i nw.gui",
-        "test": "mocha test/*.js"
-    },
-    "directories": {
-        "test": "test/"
-    },
-    "author": "azu",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/azu/floating-memo/issues"
-    },
-    "dependencies": {
-        "dayone": "0.0.4",
-        "lodash": "^2.4.1"
-    }
+  "name": "floating-memo",
+  "description": "floating memo in node-webkit",
+  "version": "0.0.1",
+  "homepage": "https://github.com/azu/floating-memo/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/azu/floating-memo.git"
+  },
+  "main": "index.html",
+  "node-main": "node-main/index.js",
+  "no-edit-menu": false,
+  "window": {
+    "title": "node-webkit demo",
+    "icon": "link.png",
+    "toolbar": false,
+    "frame": false,
+    "width": 800,
+    "height": 500,
+    "position": "mouse",
+    "min_width": 400,
+    "min_height": 200,
+    "max_width": 800,
+    "max_height": 600
+  },
+  "scripts": {
+    "watch": "watchify lib/app.js -o index.js -d -i nw.gui",
+    "test": "mocha test/*.js"
+  },
+  "directories": {
+    "test": "test/"
+  },
+  "author": "azu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/azu/floating-memo/issues"
+  },
+  "dependencies": {
+    "codemirror": "^4.5.0",
+    "dayone": "0.0.4",
+    "lodash": "^2.4.1",
+    "mercury": "^6.0.1"
+  }
 }
