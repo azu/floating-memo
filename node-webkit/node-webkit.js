@@ -11,5 +11,10 @@ if (process.platform == 'darwin') {
     mb.createMacBuiltin(require("../package.json").name);
     win.menu = mb;
 }
-
+var githubReaderMenu = new gui.Menu();
+var openMenuItem = new gui.MenuItem({ label: 'Config DayOne Path' }).on("click", function () {
+    require("../lib/user-config").configPath();
+});
+githubReaderMenu.append(openMenuItem);
+win.menu.insert(new gui.MenuItem({ label: require("../package.json").name, submenu: githubReaderMenu}), 1);
 win.setAlwaysOnTop(true);
