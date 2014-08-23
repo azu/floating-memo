@@ -12,10 +12,8 @@ module.exports = function (text, tags, callback) {
     }
     prevText = text;
     // Basic entry
-    var gui = global.window.nwDispatcher.requireNwGui();
-    var win = gui.Window.get();
     var dayone;
-    if(win.dayOneJournalPath) {
+    if((global.window.dayOneJournalPath)) {
         dayone = new DayOne({
             directory: global.window.dayOneJournalPath
         });
