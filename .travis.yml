@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+- '0.10'
+script:
+  - npm run dist
+  - zip floating-memo-osx.zip -r build/floating-memo/osx
+deploy:
+  provider: releases
+  api_key:
+    secure: Eku/5nZ5MbLPfF7CjTEAnPFRjRZryBuOsexY3jfGYQe2999HmBZ/I5hkJX1gsnE0nK6TqydWqttxw/L5c8XL1a7ZpNuzaAZWIO7uvgIlLjQ5s++42l78A9H4U7jqWqTcnSG1ao43F++r7n+QICahyjb5k8RRr/2Z+Pb8aFQynvU=
+  file:
+    - floating-memo-osx.zip
+  on:
+    repo: azu/floating-memo
