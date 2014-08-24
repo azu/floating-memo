@@ -1,7 +1,7 @@
 {
   "name": "floating-memo",
   "description": "floating memo in node-webkit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/azu/floating-memo/",
   "repository": {
     "type": "git",
