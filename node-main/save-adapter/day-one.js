@@ -22,7 +22,7 @@ module.exports = function (text, tags, callback) {
     }
     var entry = new DayOneEntry();
     entry.creationDate = new Date();
-    entry.text = text;
+    entry.text = text.trim();
     entry.tags = tags;
     dayone.save(entry, function (error) {
         if (typeof callback === "function") {
