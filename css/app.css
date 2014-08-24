@@ -21,4 +21,6 @@ html, body {
 
 .toolbar {
   bottom: 0;
-  position: fixed; }
+  position: fixed;
+  background-color: #eee;
+  width: 100%; }
