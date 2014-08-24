@@ -37,6 +37,7 @@
   },
   "dependencies": {
     "codemirror": "^4.5.0",
+    "codemirror-typewriter-scrolling": "^0.1.0",
     "dayone": "0.0.4",
     "lodash": "^2.4.1",
     "mercury": "^6.0.1"
