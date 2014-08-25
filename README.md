@@ -9,11 +9,13 @@ floating-memo app in node-webkit.
 - Always on top
 - Markdown editor(gfm support)
 - Automatically saving previous writing memo.
-- Save to DayOne
+- Save to DayOne(OS X)
 
 ## Installation
 
-- [ ] Describe the installation process
+This app only support Mac OS X.(but, if you implement [node-main/save-adapter](node-main/save-adapter) for your platform, you can use your platform.)
+
+- Download from [releases/latest](https://github.com/azu/floating-memo/releases/latest)
 
 ## Usage
 
