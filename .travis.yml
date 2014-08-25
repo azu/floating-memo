@@ -12,5 +12,5 @@ deploy:
   on:
     repo: azu/floating-memo
     tags: true
+    all_branches: true
   skip_cleanup: true
-  all_branches: true  # https://github.com/travis-ci/travis-ci/issues/1675
