@@ -2,8 +2,8 @@ language: node_js
 node_js:
 - '0.10'
 script:
-  - npm run dist
-  - zip floating-memo-osx.zip -r build/floating-memo/osx
+  - [ "${TRAVIS_TAG}" != "" ] && npm run dist
+  - [ "${TRAVIS_TAG}" != "" ] && zip floating-memo-osx.zip -r build/floating-memo/osx
 deploy:
   provider: releases
   api_key:
@@ -12,3 +12,6 @@ deploy:
     - floating-memo-osx.zip
   on:
     repo: azu/floating-memo
+    tags: true
+  skip_cleanup: true
+  all_branches: true  # https://github.com/travis-ci/travis-ci/issues/1675

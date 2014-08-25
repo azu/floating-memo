@@ -4,13 +4,21 @@ floating-memo app in node-webkit.
 
 ![img](http://monosnap.com/image/DS3rw7zNhQu3npC5yhBu6wjbIkLvaV.png)
 
+## Feature
+
+- Always on top
+- Markdown editor(gfm support)
+- Automatically saving previous writing memo.
+- Save to DayOne
+
 ## Installation
 
 - [ ] Describe the installation process
 
 ## Usage
 
-- [ ] Write usage instructions
+1. Write memo
+2. Pressing save button saving to DayOne
 
 ## Contributing
 
