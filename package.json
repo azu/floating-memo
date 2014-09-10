@@ -20,9 +20,10 @@
     "position": "mouse"
   },
   "scripts": {
+    "build": "browserify lib/app.js -o index.js -i nw.gui",
     "watch": "watchify lib/app.js -o index.js -d -i nw.gui",
     "test": "mocha test/*.js",
-    "dist": "nwbuild -p 'osx' ./"
+    "dist": "npm run build && nwbuild -p 'osx' ./"
   },
   "directories": {
     "test": "test/"
@@ -40,6 +41,6 @@
     "mercury": "^6.0.1"
   },
   "devDependencies": {
-    "node-webkit-builder": "^0.1.2"
+    "node-webkit-builder": "~0.1.2"
   }
 }
