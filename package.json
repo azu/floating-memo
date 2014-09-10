@@ -22,7 +22,7 @@
   "scripts": {
     "watch": "watchify lib/app.js -o index.js -d -i nw.gui",
     "test": "mocha test/*.js",
-    "dist": "nwbuild -p 'osx' ./ -o ./build"
+    "dist": "nwbuild -p 'osx' ./"
   },
   "directories": {
     "test": "test/"
