@@ -7,6 +7,11 @@ html, body {
   margin: 0;
   padding: 0;
   overflow: hidden;
+
+}
+
+html, body, *{
+  background: rgba(255, 255, 255, .3) !important;
 }
 
 .main-wrapper {

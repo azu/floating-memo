@@ -17,7 +17,8 @@
     "frame": false,
     "width": 800,
     "height": 500,
-    "position": "mouse"
+    "position": "mouse",
+    "transparent":true
   },
   "scripts": {
     "build": "browserify lib/app.js -o index.js -i nw.gui",
